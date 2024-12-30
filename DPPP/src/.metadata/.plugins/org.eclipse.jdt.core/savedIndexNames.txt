@@ -1,0 +1,1 @@
+INDEX VERSION 1.134+C:\Users\ashok\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\DPPP\src\.metadata\.plugins\org.eclipse.jdt.core
