@@ -1,0 +1,85 @@
+class RBIBank {
+	int balance;
+	
+	void deposit(int amt) {
+		this.balance=this.balance + amt;
+		System.out.println("From RBI successfully deposited...amount..."+amt);
+	}
+	
+	void WithDraw(int amt) {
+		this.balance=this.balance - amt;
+		System.out.println("From RBI successfully withdrawn....amount..."+amt);
+		}
+	
+	void checkBalance() {
+		System.out.println("From RBI avl balance....." + this.balance);
+	}
+}
+
+class SBIBank extends RBIBank {
+	public SBIBank(int balance) {
+		this.balance=balance;
+	}
+	void deposit(int amt) {
+		if (amt < 50000) {
+			this.balance=this.balance + amt;
+			System.out.println("From SBI suucessfully deposited...amount.." + amt);
+		} else {
+			System.out.println("From SBI limit exceeded");
+		}
+	}
+	void withdraw(int amt) {
+		if (amt < 50000) {
+			this.balance=this.balance + amt;
+			System.out.println("From SBI suucessfully withdrawn...amount.." + amt);
+		} else {
+			System.out.println("From SBI limit exceeded");
+		}
+	}
+}
+
+class ICICIBank extends RBIBank {
+	public ICICIBank(int balance) {
+		this.balance=balance;
+	}
+	void deposit(int amt) {
+		if (amt < 50000) {
+			this.balance=this.balance + amt;
+			System.out.println("From ICICI suucessfully deposited...amount.." + amt);
+		} else {
+			System.out.println("From ICICI limit exceeded");
+		}
+	}
+	void withdraw(int amt) {
+		if (amt < 50000) {
+			this.balance=this.balance + amt;
+			System.out.println("From ICICI suucessfully withdrawn...amount.." + amt);
+		} else {
+			System.out.println("From ICICI limit exceeded");
+		}
+	}
+}
+
+class HDFCBank extends RBIBank {
+	public HDFCBank(int balance) {
+		this.balance=balance;
+	}
+	void deposit(int amt) {
+		if (amt < 500000) {
+			this.balance=this.balance + amt;
+			System.out.println("From HDFC suucessfully deposited...amount.." + amt);
+		} else {
+			System.out.println("From HDFC limit exceeded");
+		}
+	}
+	void withdraw(int amt) {
+		if (amt < 500000) {
+			this.balance=this.balance + amt;
+			System.out.println("From HDFC suucessfully withdrawn...amount.." + amt);
+		} else {
+			System.out.println("From HDFC limit exceeded");
+		}
+	}
+}
+
+

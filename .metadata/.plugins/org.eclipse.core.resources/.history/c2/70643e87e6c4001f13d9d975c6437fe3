@@ -1,0 +1,28 @@
+package edu.stpeters;
+
+class Person {
+	int aadhar;
+	String namae;
+	String address;
+}
+
+class Worker extends Person {
+	Address permanentAddress;
+	Address tempA ddress;
+	Address offAddress;
+}
+
+
+class Address {
+	String street;
+	String flat;
+	String pincode;
+}
+
+
+
+
+public class multiInDemo {
+	
+
+}

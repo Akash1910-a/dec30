@@ -1,0 +1,18 @@
+package edu.stpeters;
+
+public class pnumber {
+	public static void main (String []args ) {
+		
+		int c=17,res=0,p=1;
+		for(int i=1;i<=300;i++) {
+			if(checkPrime(i) == true) {
+				
+			}
+		}
+	}
+
+	private static boolean checkPrime(int i) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}
